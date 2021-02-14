@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>模拟终端</title>
+<!--MDUI-->
+ <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+  integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+  integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+  crossorigin="anonymous"
+></script>
+<!--/MDUI-->
+<script src="/ts/cl.js"></script>
+<style>
+.box{
+	margin:0 auto;
+	width:98%;
+	outline:none;
+	border:0px solid;
+	border-radius:16px;
+	background-color:white;
+}
+ul{list-style-type:circle;}
+</style>
+	</head>
+	<body class="mdui-color-grey-900">
+	<div class="box mdui-text-color-white-text mdui-color-grey-800" >
+    <ul id="SC">
+    </ul>
+	</div>	
+	<input type="text" onkeydown="if(event.keyCode==13){GET()}" id="SR" class="box mdui-center mdui-text-color-white-text mdui-color-grey-800" style="height:50px;" placeholder="终端输入...">
+	</body>
+</html>
